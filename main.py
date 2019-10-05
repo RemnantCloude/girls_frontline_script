@@ -2,20 +2,25 @@
 
 # 屏幕范围默认为(1920,1080)
 
-# 主界面
-
+from pyautogui import click
 import pyautogui
-import time
-import random # random.randint(0,9)
+from random import randint  # randint(0,9)
+import PIL.Image
 
-import general
+from general import Delay
 import MainWindow
 import CombatWindow
 import FormationWindow
-import Combat_02
+import Combat.Combat_64e
+import PIL.ImageGrab
 
-# a = input()
-# b = input()
-# Combat_02.Combat_02(int(a),int(b))
-a = input()
-Combat_02.Combat_02(int(a[0]),int(a[1]))
+current_time = int(input())
+repeat_time = int(input())
+click(randint(400, 500), randint(0, 70))
+while current_time < repeat_time: 
+    Combat.Combat_64e.Combat_64e()
+    print(current_time)
+    current_time = current_time + 1
+    Delay(4, 5)
+pyautogui.alert(text='拖完了~欸嘿~', title='', button='OK')
+

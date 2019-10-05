@@ -1,15 +1,15 @@
-import pyautogui
-import time
-import random # random.randint(0,9)
+from pyautogui import click
+from time import sleep
+from random import randint
+from random import uniform
 
-def Delay_24():
-    time.sleep(random.uniform(2,4))
-    
-def Delay_46():
-    time.sleep(random.uniform(4,6))
+def Delay(x, y):
+    sleep(uniform(x, y))
 
 def ReturnToBase():
-    pyautogui.click(random.randint(20,200),random.randint(20,135))
+    click(randint(20, 200), randint(20, 135))
+    Delay(3, 4)
 
 def Cancel():
-    pyautogui.click(random.randint(20,200),random.randint(20,135))
+    click(randint(20, 200), randint(20, 135))
+    Delay(1, 2)
