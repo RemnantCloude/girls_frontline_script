@@ -11,7 +11,8 @@ from general import Delay
 ## 作战任务
 ### 普通作战
 def NormalCombat():
-    click(randint(1000,1235), randint(814,925))
+    click(randint(1000, 1235), randint(814, 925))
+    Delay(0, 1)
 
 ### 翻页到5.6小关
 def TO56():
@@ -47,6 +48,7 @@ def Combat_Start():
 ### 结束作战
 def Combat_End():
     click(randint(1655, 1870), randint(935, 1010))
+    Delay(0, 1)
     
 ### 终止作战
 def Combat_Terminate():
@@ -64,7 +66,8 @@ def Combat_Retry():
 
 ### 队伍编成
 def Team_Form():
-    click(randint(225,500),randint(900,960))
+    click(randint(250, 500), randint(900, 960))
+    Delay(3, 4)
 
 ### 确定部署
 def Deploy_Confirm():

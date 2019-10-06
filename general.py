@@ -12,4 +12,4 @@ def ReturnToBase():
 
 def Cancel():
     click(randint(20, 200), randint(20, 135))
-    Delay(1, 2)
+    Delay(3, 4)
