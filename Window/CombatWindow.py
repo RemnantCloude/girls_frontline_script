@@ -21,15 +21,16 @@ def TO56():
 ### 选择关卡
 def ChooseLevel(level):
     if level is 1:
-        pass
+        click(randint(640, 1800), randint(359, 478))
     elif level is 2:
         click(randint(640, 1800), randint(527, 666))
     elif level is 3:
-        pass
+        click(randint(640, 1800), randint(709, 836))
     elif level is 4:
         click(randint(640, 1800), randint(881, 1015))
     elif level is 5:
-        pass
+        TO56()
+        click(randint(640, 1800), randint(652, 766))
     elif level is 6:
         TO56()
         click(randint(640, 1800), randint(830, 950))
