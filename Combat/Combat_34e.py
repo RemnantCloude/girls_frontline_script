@@ -1,9 +1,8 @@
 from pyautogui import click
 from random import randint
-from time import sleep
 
-import FormationWindow
-import CombatWindow
+from Window import FormationWindow
+from Window import CombatWindow
 from general import Delay
 
 ### 指挥部

@@ -1,12 +1,10 @@
 from pyautogui import click
 from pyautogui import moveTo, dragRel
-from random import randint, uniform
-from time import sleep
+from random import randint
 
-import FormationWindow
-import CombatWindow
+from Window import FormationWindow
+from Window import CombatWindow
 from general import Delay
-import general
 
 ### 指挥部
 def Headquarters():

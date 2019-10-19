@@ -1,16 +1,15 @@
 from pyautogui import click
 from pyautogui import moveTo, dragRel
-from random import randint, uniform
-from time import sleep
+from random import randint
 
-import FormationWindow
-import CombatWindow
+from Window import FormationWindow
+from Window import CombatWindow
 from general import Delay
 import general
 
 ### 指挥部
 def Headquarters():
-    click(randint(1245, 1275),randint(1066, 1075))
+    click(randint(1245, 1275), randint(1066, 1075))
 
 ### 机场
 def Airport():
@@ -31,21 +30,17 @@ def Combat_44e(current_times):
     Delay(1, 2)
     # 点击队伍编成
     CombatWindow.Team_Form()
-    # 交换打手
+    # 交换打手TODO
     if current_times % 2 == 0:# 偶数次 15
         # 点击3号位打手
         FormationWindow.ChooseFigure(3)
-        Delay(2, 3)
         # 选择替补1
         FormationWindow.Figure(1, 4)
-        Delay(1, 2)
     else:# 奇数次 M4
         # 点击3号位打手
         FormationWindow.ChooseFigure(3)
-        Delay(2, 3)
         # 选择替补1
         FormationWindow.Figure(1, 3)
-        Delay(1, 2)
     # 返回
     general.Cancel()
 

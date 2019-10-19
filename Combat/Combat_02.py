@@ -1,10 +1,8 @@
 from pyautogui import click
 from random import randint
-from random import uniform
-from time import sleep
 
-import FormationWindow
-import CombatWindow
+from Window import FormationWindow
+from Window import CombatWindow
 from general import Delay
 import general
 
@@ -45,13 +43,7 @@ def Combat_02(current_times):
     else:# 偶数次 G11
         # 点击3号位打手
         FormationWindow.ChooseFigure(3)
-        Delay(2, 3)
-        FormationWindow.FigureKindDisplay()
-        Delay(0, 1)
-        FormationWindow.AssuaultRifle()
-        Delay(0, 1)
-        FormationWindow.FigureKind_Confirm()
-        Delay(2, 3)
+        FormationWindow.FigureKindDisplay('AR')
         FormationWindow.Figure(2, 1)
         Delay(1, 2)
     # 返回
@@ -95,7 +87,7 @@ def Combat_02(current_times):
     CombatWindow.Plan_Confirm()
 
     # 等待
-    Delay(180, 182)
+    Delay(175, 177)
 
     # 结束回合
     CombatWindow.Combat_End()
