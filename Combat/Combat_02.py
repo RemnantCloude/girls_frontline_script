@@ -40,15 +40,19 @@ def Combat_02(current_times):
         # 点击3号位打手
         FormationWindow.ChooseFigure(3)
         Delay(2, 3)
-        # 选择替补1
         FormationWindow.Figure(1, 4)
         Delay(1, 2)
-    else:# 偶数次 M4
+    else:# 偶数次 G11
         # 点击3号位打手
         FormationWindow.ChooseFigure(3)
         Delay(2, 3)
-        # 选择替补1
-        FormationWindow.Figure(1, 2)
+        FormationWindow.FigureKindDisplay()
+        Delay(0, 1)
+        FormationWindow.AssuaultRifle()
+        Delay(0, 1)
+        FormationWindow.FigureKind_Confirm()
+        Delay(2, 3)
+        FormationWindow.Figure(2, 1)
         Delay(1, 2)
     # 返回
     general.Cancel()
@@ -67,7 +71,6 @@ def Combat_02(current_times):
 
     # 开始作战
     CombatWindow.Combat_Start()
-    Delay(2, 4)
     # 点击狗粮2次
     Airport()
     Delay(1, 2)
@@ -92,7 +95,7 @@ def Combat_02(current_times):
     CombatWindow.Plan_Confirm()
 
     # 等待
-    Delay(170, 172)
+    Delay(180, 182)
 
     # 结束回合
     CombatWindow.Combat_End()

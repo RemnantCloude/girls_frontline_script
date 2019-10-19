@@ -11,14 +11,14 @@ from general import Delay
 import MainWindow
 import CombatWindow
 import FormationWindow
-import Combat.Combat_64e
-import PIL.ImageGrab
+
+import Combat.Combat_02
 
 current_time = int(input())
 repeat_time = int(input())
 click(randint(400, 500), randint(0, 70))
 while current_time < repeat_time: 
-    Combat.Combat_64e.Combat_64e()
+    Combat.Combat_02.Combat_02(current_time)
     print(current_time)
     current_time = current_time + 1
     Delay(4, 5)

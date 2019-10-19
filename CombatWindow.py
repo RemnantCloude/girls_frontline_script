@@ -2,8 +2,6 @@ from pyautogui import click
 from pyautogui import moveTo, dragRel
 from pyautogui import screenshot
 from random import randint
-import PIL.ImageGrab
-import operator
 
 from general import Delay
 
@@ -89,7 +87,7 @@ def Retreat():
 ### 计划模式
 def PlanMode():
     click(randint(0, 250), randint(855, 920))
-    Delay(0, 1)
+    Delay(1, 2)
 
 ### 执行计划
 def Plan_Confirm():
