@@ -78,6 +78,11 @@ def Supply():
     click(randint(1620, 1920), randint(790, 885))
     Delay(1, 2)
 
+### 单个人形撤退
+def SingleFigure_Retreat():
+    click(randint(86, 200), randint(225, 260))
+    Delay(1, 2)
+
 ### 撤退
 def Retreat():
     click(randint(1376, 1615), randint(932, 1009))
@@ -97,7 +102,7 @@ def Plan_Confirm():
 
 ### 取消选择
 def Choose_Cancel():
-    click(randint(1300, 1700), randint(750, 900))
+    click(randint(1800, 1900), randint(750, 900))
     Delay(0, 1)
 
 ### 战斗妖精AUTO
