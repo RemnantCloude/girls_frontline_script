@@ -52,7 +52,7 @@ def Combat_26():
     Delay(90, 95)
 
     # 结束回合
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
     Delay(12, 14)
 
     # 结算动画

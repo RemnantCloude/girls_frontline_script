@@ -60,7 +60,7 @@ def Combat_16():
     Delay(70, 75)
 
     # 结束回合
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
     Delay(25,27)
     
     # 结算动画
@@ -94,7 +94,7 @@ def Combat_16():
     Delay(2, 4)
 
     # 结束回合
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
     Delay(12, 14)
 
     # 结算动画

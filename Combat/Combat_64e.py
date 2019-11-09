@@ -8,13 +8,13 @@ from general import Delay
 
 # 第一回合
 ### 指挥部
-def Headquarters():
+def Headquarters_1():
     click(randint(614, 667), randint(517, 563)) 
 ### 路径1
-def pot1():
+def pot1_1():
     click(randint(647, 671), randint(456, 480))
 ### 路径2
-def pot2():
+def pot2_1():
     click(randint(698, 726), randint(372, 396))
 
 # 第二回合战斗之后
@@ -68,31 +68,31 @@ def pot10_7():
 # 第一回合
 def round1():
     # 点击梯队2次
-    Headquarters()
+    Headquarters_1()
     Delay(1, 2)
-    Headquarters()
+    Headquarters_1()
     Delay(1, 2)
     # 补充弹药
     CombatWindow.Supply()
     # 行动
-    pot1()
+    pot1_1()
     Delay(2, 3)
     CombatWindow.Choose_Cancel()
     # 部署狗粮队1
-    Headquarters()
+    Headquarters_1()
     Delay(1, 2)
     CombatWindow.Deploy_Confirm()
     # 第一回合结束
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
 
     Delay(21, 23)
 
 # 第二回合
 def round2():
     ## 主力队向上1格
-    pot1()
+    pot1_1()
     Delay(0, 1)
-    pot2()
+    pot2_1()
     Delay(18, 19)
     CombatWindow.Combat_EndClear()
     ## 狗粮队1向上1格
@@ -106,7 +106,7 @@ def round2():
     Delay(1, 2)
     CombatWindow.Deploy_Confirm()
     ## 第二回合结束
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
 
     # 等待
     Delay(21, 23)
@@ -137,7 +137,7 @@ def round3():
     Delay(1, 2)
     CombatWindow.Deploy_Confirm()
     ## 第三回合结束
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
 
     # 等待
     Delay(21, 23)
@@ -188,7 +188,7 @@ def round4():
     pot3_2()
     Delay(1, 2)
     ## 第四回合结束
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
 
     # 等待
     Delay(21, 23)
@@ -213,7 +213,7 @@ def round5():
     # 打开妖精
     CombatWindow.Fairy_AUTO()
     ## 第五回合结束
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
 
     # 等待
     Delay(21, 23)
@@ -242,7 +242,7 @@ def round6():
     CombatWindow.Plan_Confirm()
     Delay(65, 67)
     ## 第六回合结束
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
 
     # 等待
     Delay(21, 23)

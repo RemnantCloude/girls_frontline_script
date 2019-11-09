@@ -27,7 +27,8 @@ def ChooseFigure(number):
 
 ## 显示种类TODO
 def FigureKindDisplay(kind):
-    click(randint(1645, 1896), randint(350, 500))
+    click(randint(1645, 1867), randint(350, 500))
+    Delay(1, 2)
     if kind is 'HG':
         click(randint(800, 1050), randint(540, 650))
     elif kind is 'SMG':
@@ -40,7 +41,7 @@ def FigureKindDisplay(kind):
         pass
     elif kind is 'SG':
         pass
-    Delay(0, 1)
+    Delay(1, 2)
     # 确认
     click(randint(1200, 1600), randint(985, 1060))
     Delay(2, 3)

@@ -34,17 +34,17 @@ def Combat_02(current_times):
     # 点击队伍编成
     CombatWindow.Team_Form()
     # 交换打手TODO
-    if current_times % 2 == 0:# 奇数次 15
+    if current_times % 2 == 0:# 偶数次 AR15
         # 点击3号位打手
         FormationWindow.ChooseFigure(3)
-        Delay(2, 3)
-        FormationWindow.Figure(1, 4)
+        # FormationWindow.FigureKindDisplay('AR')
+        FormationWindow.Figure(1, 2)
         Delay(1, 2)
-    else:# 偶数次 G11
+    else:# 奇数次 AK12
         # 点击3号位打手
         FormationWindow.ChooseFigure(3)
         FormationWindow.FigureKindDisplay('AR')
-        FormationWindow.Figure(2, 1)
+        FormationWindow.Figure(2, 4)
         Delay(1, 2)
     # 返回
     general.Cancel()
@@ -87,10 +87,10 @@ def Combat_02(current_times):
     CombatWindow.Plan_Confirm()
 
     # 等待
-    Delay(175, 177)
+    Delay(186, 189)
 
     # 结束回合
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
     Delay(12, 14)
 
     # 结算动画

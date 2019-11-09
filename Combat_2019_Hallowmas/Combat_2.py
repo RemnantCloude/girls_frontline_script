@@ -46,10 +46,10 @@ def Combat_2():
     CombatWindow.Plan_Confirm()
 
     # 等待
-    Delay(87, 89)
+    Delay(83, 85)
 
     # 回合结束
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
     Delay(12, 14)
 
     # 结算动画

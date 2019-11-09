@@ -85,7 +85,7 @@ def Combat_44e(current_times):
     Delay(97, 100)
 
     # 结束回合
-    CombatWindow.Combat_End()
+    CombatWindow.Round_End()
     Delay(12, 14)
 
     # 结算动画

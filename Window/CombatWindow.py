@@ -44,11 +44,6 @@ def Combat_Start():
     click(randint(1655, 1870), randint(935, 1010))
     Delay(2, 3)
 
-### 结束作战
-def Combat_End():
-    click(randint(1655, 1870), randint(935, 1010))
-    Delay(0, 1)
-    
 ### 终止作战
 def Combat_Terminate():
     click(randint(402, 548), randint(10, 120))
@@ -62,6 +57,11 @@ def Combat_Retry():
     Delay(1, 2)
     click(randint(621, 849), randint(701, 776))
     Delay(3, 4)
+
+### 结束作战
+def Round_End():
+    click(randint(1655, 1870), randint(935, 1010))
+    Delay(0, 1)
 
 ### 队伍编成
 def Team_Form():
@@ -88,7 +88,7 @@ def Retreat():
     click(randint(1376, 1615), randint(932, 1009))
     Delay(1, 2)
     click(randint(1000, 1237), randint(701, 786))
-    Delay(2, 3)
+    Delay(3, 4)
 
 ### 计划模式
 def PlanMode():
@@ -108,6 +108,11 @@ def Choose_Cancel():
 ### 战斗妖精AUTO
 def Fairy_AUTO():
     click(randint(1760, 1885), randint(307, 350))
+    Delay(1, 2)
+
+### 战斗妖精释放
+def Fairy_release():
+    click(randint(1760, 1885), randint(590, 630))
     Delay(1, 2)
 
 ### 战斗结算
