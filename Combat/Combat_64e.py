@@ -277,7 +277,7 @@ def Combat_64e():
     CombatWindow.ChooseLevel(4)
 
     # 点击指挥部
-    Headquarters()
+    Headquarters_1()
     Delay(1, 2)
     # 部署主力队
     CombatWindow.Deploy_Confirm()

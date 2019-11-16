@@ -122,7 +122,7 @@ def round2():
     pot1_2()
     Delay(1, 2)
     # 检测小飞机
-    matching = image.match('e:/code/girls_frontline_script/images/34n_fly.png', image.capture_screen())
+    matching = image.match('e:/code/girls_frontline_script/images/Combat/34n_fly.png', image.capture_screen())
     if (matching[0] > 20000000):
         CombatWindow.Fairy_release()
     pot2_2()
@@ -131,7 +131,7 @@ def round2():
     pot2_2()
     Delay(1, 2)
     # 检测小飞机
-    matching = image.match('e:/code/girls_frontline_script/images/34n_fly.png', image.capture_screen())
+    matching = image.match('e:/code/girls_frontline_script/images/Combat/34n_fly.png', image.capture_screen())
     if (matching[0] > 20000000):
         CombatWindow.Fairy_release()
     pot3_2()

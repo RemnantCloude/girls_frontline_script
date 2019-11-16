@@ -1,3 +1,5 @@
+# 参考自https://www.binss.me/blog/how-i-realize-quick-macro-by-python/
+
 # vscode检测不到cv2模块，通过这种添加方式消除报错
 from cv2 import cv2
 from PIL import ImageGrab

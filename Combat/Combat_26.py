@@ -24,32 +24,31 @@ def Combat_26():
 
     # 点击指挥部
     Headquarters()
-    Delay(2, 4)
+    Delay(1, 2)
     # 点击确定，部署第一梯队
     CombatWindow.Deploy_Confirm()
 
     # 开始作战
     CombatWindow.Combat_Start()
-    Delay(2, 4)
     # 点击梯队2次
     Headquarters()
-    Delay(2, 4)
+    Delay(1, 2)
     Headquarters()
-    Delay(2, 4)
+    Delay(1, 2)
     # 补充弹药
     CombatWindow.Supply()
     # 进入计划模式
     CombatWindow.PlanMode()
     # 规划路径
     pot1()
-    Delay(2, 4)
+    Delay(1, 2)
     pot2()
-    Delay(2, 4)
+    Delay(1, 2)
     # 执行计划
     CombatWindow.Plan_Confirm()
 
     # 等待
-    Delay(90, 95)
+    Delay(94, 96)
 
     # 结束回合
     CombatWindow.Round_End()
