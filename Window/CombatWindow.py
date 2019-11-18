@@ -103,7 +103,7 @@ def Plan_Confirm():
 ### 取消选择
 def Choose_Cancel():
     click(randint(1800, 1900), randint(750, 900))
-    Delay(0, 1)
+    Delay(1, 2)
 
 ### 战斗妖精AUTO
 def Fairy_AUTO():

@@ -26,7 +26,7 @@ def ChooseFigure(number):
     Delay(1, 2)
 
 ## 显示种类TODO
-def FigureKindDisplay(kind):
+def FigureKindDisplay(kind, is_max_level):
     click(randint(1645, 1867), randint(350, 500))
     Delay(1, 2)
     if kind is 'HG':
@@ -42,6 +42,9 @@ def FigureKindDisplay(kind):
     elif kind is 'SG':
         pass
     Delay(1, 2)
+    if is_max_level == True:
+        click(randint(1100, 1300), randint(875, 960))
+        Delay(1, 2)
     # 确认
     click(randint(1200, 1600), randint(985, 1060))
     Delay(2, 3)
